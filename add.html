@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Add</title>
+</head>
+
+<body>
+    <div class="bodyDiv myrow">
+        <!-- <img src="images/mainbg.jpg" class="img"> -->
+
+        <form action="/done" method="post" enctype="multipart/form-data">
+            <div class="container">
+                <div class="row myrow">
+
+                    <div class="form-group adddiv col-lg-12 col-md-12 col-sm-12">
+                        <!-- <h1 class="addname">Add a Book</h1> -->
+                        <br><br>
+                        <input type="text" placeholder="Name of the Book" id="namebk" name="namebk" class="form-control form-control-lg" style="margin-bottom: 10px;">
+                        <input type="text" placeholder="Category" id="catbk" name="catbk" class="form-control form-control-lg" style="margin-bottom: 10px;">
+                        <input type="text" placeholder="Name of the Author" id="authbk" name="authbk" class="form-control form-control-lg" style="margin-bottom: 10px;">
+                        <!-- <div class="form-group"> -->
+                        <!-- <label for="exampleFormControlTextarea2">Small textarea</label> -->
+                        <textarea class="form-control rounded-0" id="descbk" name="descbk" placeholder="Description" rows="3" style="margin-bottom: 10px;"></textarea>
+                        <!-- </div> -->
+                        <input type="number" placeholder="Published Year" id="pubbk" name="pubbk" class="form-control form-control-lg" style="margin-bottom: 10px;">
+                        <input type="text" placeholder="Cost" id="cstbk" name="cstbk" class="form-control form-control-lg" style="margin-bottom: 10px;">
+                        <!-- <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="filebk" name="filebk">
+                        <label class="custom-file-label" for="customFile">Adding book...</label>
+                    </div> -->
+                        <input type="file" class="form-control-file form-control-lg upimg" id="filebk" name="filebk">
+                        <input type="submit" id="subbk" class="btn btn-primary btn-lg" value="Add">
+                        <a href="/"><input type="button" id="backbk" class="btn btn-primary btn-lg" value="Back"></a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

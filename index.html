@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Book</title>
+</head>
+
+<body>
+
+    <ul class="nav justify-content-end headlogin">
+        <li class="nav-item">
+            <a class="nav-link active" href="/adlogin"><button class="btn btn-primary btn-sm" id="waylogin">Login</button></a>
+            <form action="/logout" method="get">
+                <a class="nav-link active" href="#"><button class="btn btn-primary btn-sm" id="waylogout">Logout</button></a>
+            </form>
+        </li>
+    </ul>
+
+    <div class="bodyDiv myrow">
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mynavb">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <h2 class="heading">Browse Available Books</h2>
+                <ul class="navbar-nav mr-auto myul">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/" id="allbk">All Books <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="freebk">Free Books</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#" id="fic">Fiction</a>
+                            <a class="dropdown-item" href="#" id="nonfic">Non-Fiction</a>
+                            <a class="dropdown-item" href="#" id="mem">Memoir</a>
+                            <a class="dropdown-item" href="#" id="sci">Popular Science</a>
+                            <a class="dropdown-item" href="#" id="abio">Autobiography</a>
+                            <a class="dropdown-item" href="#" id="bio">Biography</a>
+                    </li>
+                    <li class="nav-item">
+                        <form action="/add" method="get">
+                            <a class="nav-link active" href="#"><button class="btn btn-primary" id="addbypass">Add a Book</button></a>
+                        </form>
+                    </li>
+                </ul>
+                <!-- <form class="form-inline my-2 my-lg-0"> -->
+                <input class="form-control mr-sm-2 srch" type="text" placeholder="Search" aria-label="Search" id="search" style="max-width: 200px;max-height: 50px;">
+                <button class="btn btn-outline-primary my-2 my-sm-0 srch" id="gosearch" href="#"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <!-- </form> -->
+                </div>
+        </nav>
+
+        <div class="container">
+            <div class="row myrow" style="margin-top: 10px;" id="cardblock">
+            </div>
+        </div>
+        <div class="container">
+            <div class="row myrow" style="margin-top: 10px;" id="carddesc">
+            </div>
+        </div>
+
+        <!-- <img src="images/mainbg.jpg" class="img1"> -->
+        </div>
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/ajax.js"></script>
+        <!-- <script src="app.js"></script> -->
+</body>
+
+</html>

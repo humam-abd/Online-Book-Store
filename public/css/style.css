@@ -1,0 +1,348 @@
+/* .bodyDiv {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+} */
+
+body {
+    background-image: url(../images/mainbg.jpg);
+    background-size: 100%;
+    min-height: 1000px;
+}
+
+
+/* .bodyDiv2 {
+    min-height: 700px;
+    position: absolute;
+} */
+
+.img {
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+}
+
+.img1 {
+    width: 100%;
+    min-height: 1700px;
+    /* position: absolute; */
+}
+
+#waylogin {
+    margin-top: 5px;
+    margin-bottom: -10px;
+    height: 32px;
+    width: 100px;
+}
+
+#waylogout {
+    margin-bottom: -14px;
+    display: none;
+    margin-top: -31px;
+    height: 32px;
+    width: 100px;
+}
+
+#addbypass {
+    display: none;
+    width: 170px;
+    padding: 0px;
+}
+
+.mynavb {
+    /* min-height: 100px; */
+}
+
+.headlogin {
+    /* min-height: 100px; */
+    background-color: #3c1c02;
+    min-height: 60px;
+}
+
+.heading {
+    text-align: center;
+    /* background-color: transparent; */
+}
+
+.detail {
+    position: absolute;
+    margin-left: 150px;
+    margin-top: -13px;
+    /* padding-top: 10px; */
+    font-size: 25px;
+}
+
+@media (min-width:1200px) {
+    .detail {
+        margin-left: 180px;
+    }
+}
+
+@media (max-width:767px) and (min-width:500px) {
+    .detail {
+        margin-left: 170px;
+    }
+}
+
+.myrow {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+.srch {
+    border: 0px;
+}
+
+.myul {
+    margin-left: 160px;
+}
+
+.cardblock {
+    max-width: 270px;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    padding-bottom: 0px;
+}
+
+.crdimg {
+    min-height: 240px;
+}
+
+.crdttl {
+    font-size: 16px;
+}
+
+.cardcategory {
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+}
+
+.crdauth {
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+}
+
+.crdyear {
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+}
+
+.rating {
+    height: 20px;
+    /* background-color: red; */
+}
+
+.score {
+    display: block;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.score-wrap {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    height: 19px;
+}
+
+.score .stars-active {
+    color: #EEBD01;
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+}
+
+.score .stars-inactive {
+    color: grey;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-text-stroke: initial;
+    overflow: hidden;
+}
+
+.money {
+    /* position: absolute; */
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.subbuy {
+    /* float: right; */
+}
+
+#descback {
+    margin-top: -65px;
+    margin-left: 620px;
+}
+
+@media (max-width:1200px) and (min-width:992px) {
+    #descback {
+        margin-left: 500px;
+    }
+}
+
+@media (max-width:992px) and (min-width:768px) {
+    #descback {
+        margin-left: 350px;
+    }
+}
+
+@media (max-width:767px) and (min-width:500px) {
+    #descback {
+        margin-left: 400px;
+    }
+}
+
+
+/*----------- adlogin css --------------*/
+
+.logdiv {
+    min-height: 400px;
+    min-width: 400px;
+    background-color: #4e3200b3;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 200px;
+    padding-top: 100px;
+}
+
+.loghead {
+    color: white;
+    margin-top: -30px;
+    padding-bottom: 17px;
+}
+
+.textinp {
+    max-width: 200px;
+    margin-left: 456px;
+}
+
+.passinp {
+    max-width: 200px;
+    margin-left: 456px;
+    margin-top: 16px;
+}
+
+.subinp {
+    margin-top: 20px;
+}
+
+@media (max-width:1199px) and (min-width:992px) {
+    .textinp {
+        margin-left: 368px;
+    }
+    .passinp {
+        margin-left: 368px;
+    }
+}
+
+@media (max-width:991px) and (min-width:768px) {
+    .textinp {
+        margin-left: 247px;
+    }
+    .passinp {
+        margin-left: 247px;
+    }
+}
+
+@media (max-width:767px) and (min-width:500px) {
+    .textinp {
+        margin-left: 127px;
+    }
+    .passinp {
+        margin-left: 127px;
+    }
+}
+
+
+/*----------- addbook css --------------*/
+
+.addbook {
+    margin-top: 269px;
+}
+
+.adlogout {
+    margin-top: 300px;
+}
+
+@media(max-width:600px) {
+    .addbook {
+        margin-bottom: -280px;
+    }
+}
+
+
+/*----------- add css --------------*/
+
+.adddiv {
+    min-height: 400px;
+    min-width: 400px;
+    border-radius: 15px;
+    /* position: absolute; */
+    background-color: #4e3200b3;
+    margin-top: 40px;
+    padding-top: 70px;
+    text-align: center;
+}
+
+.upimg {
+    color: #ffffff9e;
+}
+
+.addname {
+    color: white;
+    text-align: center;
+}
+
+#backbk {
+    margin-bottom: 20px;
+}
+
+#subbk {
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+textarea::placeholder {
+    font-size: 20px;
+}
+
+
+/*----------- buy css --------------*/
+
+#stockmsg {
+    position: absolute;
+    color: white;
+    /* margin: 0px auto; */
+    margin-left: 467px;
+    margin-top: 200px;
+}
+
+#stockbck {
+    position: absolute;
+    /* margin: 0px auto; */
+    margin-top: 30px;
+}
+
+@media (max-width:1000px) and (min-width:769px) {
+    #stockmsg {
+        margin-left: 350px;
+    }
+}
+
+@media (max-width:769px) and (min-width:500px) {
+    #stockmsg {
+        margin-left: 200px;
+    }
+}
