@@ -38,36 +38,36 @@ var books = mongoose.Schema({
 var book = mongoose.model("Book", books);
 
 app.post("/done", urlParser, function(req, res) {
-    if (req.body.namebk != null || req.body.filebk != null) {
-        upload(req, res, function(err) {
-            if (err) {
-                res.send("File not found");
-            }
-            res.redirect("/addbook");
-            console.log("File Uploaded");
-            var f = req.file.filename;
-            console.log(f);
+    // if (req.body.namebk != null) {
+    upload(req, res, function(err) {
+        if (err) {
+            res.send("File not found");
+        }
+        res.redirect("/addbook");
+        console.log("File Uploaded");
+        var f = req.file.filename;
+        console.log(f);
 
-            var obj = new book({
-                name: req.body.namebk,
-                category: req.body.catbk,
-                author: req.body.authbk,
-                description: req.body.descbk,
-                publishedyear: req.body.pubbk,
-                cost: req.body.cstbk,
-                file: f
-            });
-            obj.save(function(err, booked) {
-                if (err) {
-                    console.error(err);
-                }
-                console.log(booked);
-            });
+        var obj = new book({
+            name: req.body.namebk,
+            category: req.body.catbk,
+            author: req.body.authbk,
+            description: req.body.descbk,
+            publishedyear: req.body.pubbk,
+            cost: req.body.cstbk,
+            file: f
         });
-    } else {
-        res.redirect("/add");
-        console.log("Error adding book");
-    }
+        obj.save(function(err, booked) {
+            if (err) {
+                console.error(err);
+            }
+            console.log(booked);
+        });
+    });
+    // } else {
+    //     res.redirect("/add");
+    //     console.log("Error adding book");
+    // }
 })
 app.get("/done", function(req, res) {
     res.send("Not Done");
